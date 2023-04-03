@@ -1,4 +1,4 @@
-# Greetings User!! Code by Isolated Thinker ;)
+# Greetings User!! Code by itsmenicky ;)
 
 from rich import print
 from tqdm import tqdm
