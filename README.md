@@ -1,6 +1,5 @@
-<h1 align="center">Python Programs</h2>
-<h5 align="center">Python console programs</h5>
+<h1 align="center">Python OOP </br><img src="https://badges.aleen42.com/src/cli.svg"> <img src="https://badges.aleen42.com/src/python.svg"></h1>
+<h5 align="center">Python OOP Principles</h5>
 <br />
-<p align="center">
-<img style="border-radius: 10px" src="https://github.com/IsolatedThinker117/PythonCalculator/blob/master/img/Calculator.jpg">
+<p align="jusitfy">Some Python console programs developed for OOP college classes. The repository contains exercises about the concepts of abstraction, encapsulation, polymorphism and inheritance.
 </p>
