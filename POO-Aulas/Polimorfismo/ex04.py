@@ -38,20 +38,34 @@ class Conta(ABC):
 
 class ContaCorrente(Conta):
     def saque(self, valor):
-        if self.saldo - valor:
+        if self.saldo < valor:
             print("Saldo Insuficiente!")
         else:
             self.saldo -= valor
 
 class ContaPoupanca(Conta):
     def saque(self, valor):
-        if self.saldo - valor:
+        if self.saldo < valor:
             print("Saldo Insuficiente!")
         else:
             self.saldo -= valor
 
 class ContaEspecial(Conta):
-    def __init__(self, limite):
+    def __init__(self, numero, nome, saldo, limite):
+        super().__init__(numero, nome, saldo)
         self.limite = limite
-    def saque(self, valor):
-        self.saldo -= self.limite 
+    def saque(self):
+        self.saldo = -(self.limite) 
+
+#Programa principal
+
+conta_especial = ContaEspecial(222, 'Alberto', 1500, 100)
+conta_corrente = ContaCorrente(333, 'Cláudio', 2000)
+conta_poupanca = ContaPoupanca(444, 'Ana', 3500)
+
+conta_especial.saque()
+print(conta_especial.saldo)    #Resultado
+conta_corrente.saque(300)
+print(conta_corrente.saldo)   #1700
+conta_poupanca.saque(300)
+print(conta_poupanca.saldo)    #3200
