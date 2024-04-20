@@ -1,3 +1,29 @@
+# Implemente a classe ContaBancaria e Cliente:
+
+# Cliente:
+#   - Atributos:
+#      * nome: nome do cliente (público)
+#      * cpf: cpf do cliente (privado)
+#      * senha: senha do cliente (privado)
+#   - Métodos:
+#      * get_senha: retorna a senha do cliente
+
+# ContaBancaria
+#   - Atributos:
+#      * numero: numero da conta (público) 
+#      * cliente: objeto Cliente associado à conta (público)
+#      * saldo: saldo da conta (privado). Deve ser inicializado no 
+#               construtor com o valor zero.
+#   - Métodos:
+#      * get_saldo: retorna o saldo da conta.
+#      * depositar: recebe como parâmetros de entrada um valor e uma 
+#                   senha. Acrescenta esse valor ao saldo da conta 
+#                   apenas se a senha for igual à senha do cliente.
+#      * sacar: recebe como parâmetros de entrada um valor e uma senha. 
+#               Subtrai esse valor do saldo da conta, apenas se a 
+#               senha for igual à senha do cliente.
+
+
 class Cliente:
     def __init__(self, nome, cpf, senha):
         self.nome = nome
